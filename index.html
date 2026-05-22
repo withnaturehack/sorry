@@ -554,39 +554,35 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;cur
     <div class="gfade-l"></div><div class="gfade-r"></div>
     <div class="g-strip" id="gstrip">
       <div class="gp" style="height:170px" onclick="openLB(0)">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>photo 1</span></div>
+        <div class="ph"><img src="1.jpg" alt="photo 1"><span>photo 1</span></div>
         <div class="ph-label">photo 1</div>
       </div>
       <div class="gp" style="height:140px;margin-top:26px" onclick="openLB(1)">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>photo 2</span></div>
+        <div class="ph"><img src="2.jpg" alt="photo 2"><span>photo 2</span></div>
         <div class="ph-label">photo 2</div>
       </div>
       <div class="gp" style="height:180px" onclick="openLB(2)">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>photo 3</span></div>
+        <div class="ph"><img src="3.jpg" alt="photo 3"><span>photo 3</span></div>
         <div class="ph-label">photo 3</div>
       </div>
       <div class="gp" style="height:155px;margin-top:14px" onclick="openLB(3)">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>photo 4</span></div>
+        <div class="ph"><img src="4.jpg" alt="photo 4"><span>photo 4</span></div>
         <div class="ph-label">photo 4</div>
       </div>
       <div class="gp" style="height:165px;margin-top:6px" onclick="openLB(4)">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>photo 5</span></div>
+        <div class="ph"><img src="5.jpg" alt="photo 5"><span>photo 5</span></div>
         <div class="ph-label">photo 5</div>
-      </div>
-      <div class="gp" style="height:150px;margin-top:20px" onclick="openLB(5)">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>photo 6</span></div>
-        <div class="ph-label">photo 6</div>
       </div>
     </div>
     <p class="g-hint">← drag or swipe →</p>
   </div>
   <div style="margin-top:18px;z-index:2;position:relative;">
     <div class="photo-frame" aria-hidden="false">
-      <div class="frame" onclick="openLB(0)"><img src="photos/photo1.jpg" alt="photo 1"></div>
-      <div class="frame" onclick="openLB(1)"><img src="photos/photo2.jpg" alt="photo 2"></div>
-      <div class="frame center" onclick="openLB(2)"><img src="photos/photo3.jpg" alt="photo 3"></div>
-      <div class="frame" onclick="openLB(3)"><img src="photos/photo4.jpg" alt="photo 4"></div>
-      <div class="frame" onclick="openLB(4)"><img src="photos/photo5.jpg" alt="photo 5"></div>
+      <div class="frame" onclick="openLB(0)"><img src="1.jpg" alt="photo 1"></div>
+      <div class="frame" onclick="openLB(1)"><img src="2.jpg" alt="photo 2"></div>
+      <div class="frame center" onclick="openLB(2)"><img src="3.jpg" alt="photo 3"></div>
+      <div class="frame" onclick="openLB(3)"><img src="4.jpg" alt="photo 4"></div>
+      <div class="frame" onclick="openLB(4)"><img src="5.jpg" alt="photo 5"></div>
     </div>
   </div>
   <button class="btn btn-ghost" style="margin-top:.75rem;z-index:2;position:relative" onclick="goTo(2)">keep reading →</button>
@@ -1051,7 +1047,7 @@ function dropStamp(){
 }
 
 // ── LIGHTBOX ──
-const PHOTOS=['photos/photo1.jpg','photos/photo2.jpg','photos/photo3.jpg','photos/photo4.jpg','photos/photo5.jpg',''];
+const PHOTOS=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
 const CAPTIONS=['a moment i loved','one of my favourites','this one makes me smile','i miss this day','still think about this one','this one says everything'];
 let lbI=0;
 function openLB(i){
